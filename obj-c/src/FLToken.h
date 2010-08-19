@@ -23,9 +23,11 @@ typedef enum {
 @interface FLToken : OAToken {
  @private
 	OAConsumer *consumer;
+	BOOL authorized;
 }
 
 @property (nonatomic, retain, readonly) OAConsumer *consumer;
+@property (nonatomic, assign, readonly, getter=isAuthorized) BOOL authorized;
 
 /*
  * Token is requested synchronously for GCD async_dispatch(..)

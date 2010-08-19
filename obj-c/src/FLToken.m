@@ -21,6 +21,7 @@
 
 @implementation FLToken
 @synthesize consumer;
+@synthesize authorized;
 
 + (FLToken *)requestTokenForConsumer:(OAConsumer *)aConsumer error:(NSError **)err {
 	if (aConsumer == nil) {
@@ -112,6 +113,9 @@
 		self.secret = token.secret;
 		
 		[token release];
+		
+		// Set ourselves to 'authorized"
+		authorized = YES;
 	}
 
 	[request release];
