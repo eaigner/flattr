@@ -9,7 +9,72 @@
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		DC0EFB3E121D57B000DB1ACF /* NSMutableURLRequest+Parameters.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB10121D57B000DB1ACF /* NSMutableURLRequest+Parameters.h */; };
+		DC0EFB3F121D57B000DB1ACF /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB11121D57B000DB1ACF /* NSMutableURLRequest+Parameters.m */; };
+		DC0EFB42121D57B000DB1ACF /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB14121D57B000DB1ACF /* NSString+URLEncoding.h */; };
+		DC0EFB43121D57B000DB1ACF /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB15121D57B000DB1ACF /* NSString+URLEncoding.m */; };
+		DC0EFB46121D57B000DB1ACF /* NSURL+Base.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB18121D57B000DB1ACF /* NSURL+Base.h */; };
+		DC0EFB47121D57B000DB1ACF /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB19121D57B000DB1ACF /* NSURL+Base.m */; };
+		DC0EFB4A121D57B000DB1ACF /* OAConsumer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB1C121D57B000DB1ACF /* OAConsumer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB4B121D57B000DB1ACF /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB1D121D57B000DB1ACF /* OAConsumer.m */; };
+		DC0EFB4E121D57B000DB1ACF /* OADataFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB20121D57B000DB1ACF /* OADataFetcher.h */; };
+		DC0EFB4F121D57B000DB1ACF /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB21121D57B000DB1ACF /* OADataFetcher.m */; };
+		DC0EFB52121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB24121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.h */; };
+		DC0EFB53121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB25121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.m */; };
+		DC0EFB56121D57B000DB1ACF /* OAMutableURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB28121D57B000DB1ACF /* OAMutableURLRequest.h */; };
+		DC0EFB57121D57B000DB1ACF /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB29121D57B000DB1ACF /* OAMutableURLRequest.m */; };
+		DC0EFB5A121D57B000DB1ACF /* OAPlaintextSignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB2C121D57B000DB1ACF /* OAPlaintextSignatureProvider.h */; };
+		DC0EFB5B121D57B000DB1ACF /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB2D121D57B000DB1ACF /* OAPlaintextSignatureProvider.m */; };
+		DC0EFB5E121D57B000DB1ACF /* OARequestParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB30121D57B000DB1ACF /* OARequestParameter.h */; };
+		DC0EFB5F121D57B000DB1ACF /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB31121D57B000DB1ACF /* OARequestParameter.m */; };
+		DC0EFB62121D57B000DB1ACF /* OAServiceTicket.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB34121D57B000DB1ACF /* OAServiceTicket.h */; };
+		DC0EFB63121D57B000DB1ACF /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB35121D57B000DB1ACF /* OAServiceTicket.m */; };
+		DC0EFB64121D57B000DB1ACF /* OASignatureProviding.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB36121D57B000DB1ACF /* OASignatureProviding.h */; };
+		DC0EFB68121D57B000DB1ACF /* OAToken.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB3A121D57B000DB1ACF /* OAToken.h */; };
+		DC0EFB69121D57B000DB1ACF /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB3B121D57B000DB1ACF /* OAToken.m */; };
+		DC0EFB75121D581F00DB1ACF /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB6F121D581F00DB1ACF /* Base64Transcoder.c */; };
+		DC0EFB76121D581F00DB1ACF /* Base64Transcoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB70121D581F00DB1ACF /* Base64Transcoder.h */; settings = {ATTRIBUTES = (); }; };
+		DC0EFB77121D581F00DB1ACF /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB71121D581F00DB1ACF /* hmac.c */; };
+		DC0EFB78121D581F00DB1ACF /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB72121D581F00DB1ACF /* hmac.h */; };
+		DC0EFB79121D581F00DB1ACF /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB73121D581F00DB1ACF /* sha1.c */; };
+		DC0EFB7A121D581F00DB1ACF /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB74121D581F00DB1ACF /* sha1.h */; };
+		DC0EFB7E121D583A00DB1ACF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0EFB7D121D583A00DB1ACF /* Security.framework */; };
+		DC0EFB85121D597C00DB1ACF /* FLToken.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB83121D597C00DB1ACF /* FLToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB86121D597C00DB1ACF /* FLToken.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB84121D597C00DB1ACF /* FLToken.m */; };
+		DC0EFBCA121D5E7700DB1ACF /* FLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFBC8121D5E7700DB1ACF /* FLResponse.h */; };
+		DC0EFBCB121D5E7700DB1ACF /* FLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFBC9121D5E7700DB1ACF /* FLResponse.m */; };
+		DC1B61B3121D645D00AC5C04 /* FLDataFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1B61B1121D645D00AC5C04 /* FLDataFetcher.h */; };
+		DC1B61B4121D645D00AC5C04 /* FLDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B61B2121D645D00AC5C04 /* FLDataFetcher.m */; };
+		DC1B61E7121D670A00AC5C04 /* Flattr.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Flattr.framework */; };
+		DC1B61E9121D671100AC5C04 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1B61E3121D66EB00AC5C04 /* MainMenu.xib */; };
+		DC1B61F2121D675800AC5C04 /* FLApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B61EB121D672600AC5C04 /* FLApplicationController.m */; };
+		DC1B620A121D67E000AC5C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B6204121D67A100AC5C04 /* main.m */; };
+		DC1B6244121D6AC500AC5C04 /* Flattr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Flattr.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC1B61E1121D66DB00AC5C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Flattr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC1B61EE121D672600AC5C04 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC1B61E7121D670A00AC5C04 /* Flattr.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -20,6 +85,48 @@
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* Flattr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flattr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		DC0EFB10121D57B000DB1ACF /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+Parameters.h"; path = "OAuth/src/NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		DC0EFB11121D57B000DB1ACF /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+Parameters.m"; path = "OAuth/src/NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		DC0EFB14121D57B000DB1ACF /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "OAuth/src/NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		DC0EFB15121D57B000DB1ACF /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "OAuth/src/NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		DC0EFB18121D57B000DB1ACF /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+Base.h"; path = "OAuth/src/NSURL+Base.h"; sourceTree = "<group>"; };
+		DC0EFB19121D57B000DB1ACF /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Base.m"; path = "OAuth/src/NSURL+Base.m"; sourceTree = "<group>"; };
+		DC0EFB1C121D57B000DB1ACF /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAConsumer.h; path = OAuth/src/OAConsumer.h; sourceTree = "<group>"; };
+		DC0EFB1D121D57B000DB1ACF /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAConsumer.m; path = OAuth/src/OAConsumer.m; sourceTree = "<group>"; };
+		DC0EFB20121D57B000DB1ACF /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OADataFetcher.h; path = OAuth/src/OADataFetcher.h; sourceTree = "<group>"; };
+		DC0EFB21121D57B000DB1ACF /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OADataFetcher.m; path = OAuth/src/OADataFetcher.m; sourceTree = "<group>"; };
+		DC0EFB24121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAHMAC_SHA1SignatureProvider.h; path = OAuth/src/OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		DC0EFB25121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAHMAC_SHA1SignatureProvider.m; path = OAuth/src/OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		DC0EFB28121D57B000DB1ACF /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAMutableURLRequest.h; path = OAuth/src/OAMutableURLRequest.h; sourceTree = "<group>"; };
+		DC0EFB29121D57B000DB1ACF /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAMutableURLRequest.m; path = OAuth/src/OAMutableURLRequest.m; sourceTree = "<group>"; };
+		DC0EFB2C121D57B000DB1ACF /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAPlaintextSignatureProvider.h; path = OAuth/src/OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		DC0EFB2D121D57B000DB1ACF /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAPlaintextSignatureProvider.m; path = OAuth/src/OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		DC0EFB30121D57B000DB1ACF /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OARequestParameter.h; path = OAuth/src/OARequestParameter.h; sourceTree = "<group>"; };
+		DC0EFB31121D57B000DB1ACF /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OARequestParameter.m; path = OAuth/src/OARequestParameter.m; sourceTree = "<group>"; };
+		DC0EFB34121D57B000DB1ACF /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAServiceTicket.h; path = OAuth/src/OAServiceTicket.h; sourceTree = "<group>"; };
+		DC0EFB35121D57B000DB1ACF /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAServiceTicket.m; path = OAuth/src/OAServiceTicket.m; sourceTree = "<group>"; };
+		DC0EFB36121D57B000DB1ACF /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OASignatureProviding.h; path = OAuth/src/OASignatureProviding.h; sourceTree = "<group>"; };
+		DC0EFB3A121D57B000DB1ACF /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAToken.h; path = OAuth/src/OAToken.h; sourceTree = "<group>"; };
+		DC0EFB3B121D57B000DB1ACF /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAToken.m; path = OAuth/src/OAToken.m; sourceTree = "<group>"; };
+		DC0EFB6F121D581F00DB1ACF /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		DC0EFB70121D581F00DB1ACF /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		DC0EFB71121D581F00DB1ACF /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		DC0EFB72121D581F00DB1ACF /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		DC0EFB73121D581F00DB1ACF /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		DC0EFB74121D581F00DB1ACF /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		DC0EFB7D121D583A00DB1ACF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DC0EFB83121D597C00DB1ACF /* FLToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLToken.h; sourceTree = "<group>"; };
+		DC0EFB84121D597C00DB1ACF /* FLToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLToken.m; sourceTree = "<group>"; };
+		DC0EFBC8121D5E7700DB1ACF /* FLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLResponse.h; sourceTree = "<group>"; };
+		DC0EFBC9121D5E7700DB1ACF /* FLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLResponse.m; sourceTree = "<group>"; };
+		DC1B61B1121D645D00AC5C04 /* FLDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDataFetcher.h; sourceTree = "<group>"; };
+		DC1B61B2121D645D00AC5C04 /* FLDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDataFetcher.m; sourceTree = "<group>"; };
+		DC1B61DB121D66D700AC5C04 /* FlattrTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlattrTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1B61DD121D66D700AC5C04 /* FlattrTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlattrTestApp-Info.plist"; sourceTree = "<group>"; };
+		DC1B61E3121D66EB00AC5C04 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		DC1B61EA121D672600AC5C04 /* FLApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLApplicationController.h; sourceTree = "<group>"; };
+		DC1B61EB121D672600AC5C04 /* FLApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLApplicationController.m; sourceTree = "<group>"; };
+		DC1B6204121D67A100AC5C04 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +135,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				DC0EFB7E121D583A00DB1ACF /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1B61D9121D66D700AC5C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1B6244121D6AC500AC5C04 /* Flattr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC2EF5B0486A6940098B216 /* Flattr.framework */,
+				DC1B61DB121D66D700AC5C04 /* FlattrTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +163,13 @@
 			isa = PBXGroup;
 			children = (
 				08FB77AEFE84172EC02AAC07 /* Classes */,
+				DC0EFB0F121D574D00DB1ACF /* OAuth */,
+				DC1B61D6121D66B900AC5C04 /* Test Application */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				DC1B61DD121D66D700AC5C04 /* FlattrTestApp-Info.plist */,
 			);
 			name = Flattr;
 			sourceTree = "<group>";
@@ -75,6 +195,12 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DC0EFB83121D597C00DB1ACF /* FLToken.h */,
+				DC0EFB84121D597C00DB1ACF /* FLToken.m */,
+				DC0EFBC8121D5E7700DB1ACF /* FLResponse.h */,
+				DC0EFBC9121D5E7700DB1ACF /* FLResponse.m */,
+				DC1B61B1121D645D00AC5C04 /* FLDataFetcher.h */,
+				DC1B61B2121D645D00AC5C04 /* FLDataFetcher.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -83,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+				DC0EFB7D121D583A00DB1ACF /* Security.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -105,6 +232,62 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		DC0EFB0F121D574D00DB1ACF /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EFB6E121D581F00DB1ACF /* Crypto */,
+				DC0EFB10121D57B000DB1ACF /* NSMutableURLRequest+Parameters.h */,
+				DC0EFB11121D57B000DB1ACF /* NSMutableURLRequest+Parameters.m */,
+				DC0EFB14121D57B000DB1ACF /* NSString+URLEncoding.h */,
+				DC0EFB15121D57B000DB1ACF /* NSString+URLEncoding.m */,
+				DC0EFB18121D57B000DB1ACF /* NSURL+Base.h */,
+				DC0EFB19121D57B000DB1ACF /* NSURL+Base.m */,
+				DC0EFB1C121D57B000DB1ACF /* OAConsumer.h */,
+				DC0EFB1D121D57B000DB1ACF /* OAConsumer.m */,
+				DC0EFB20121D57B000DB1ACF /* OADataFetcher.h */,
+				DC0EFB21121D57B000DB1ACF /* OADataFetcher.m */,
+				DC0EFB24121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.h */,
+				DC0EFB25121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.m */,
+				DC0EFB28121D57B000DB1ACF /* OAMutableURLRequest.h */,
+				DC0EFB29121D57B000DB1ACF /* OAMutableURLRequest.m */,
+				DC0EFB2C121D57B000DB1ACF /* OAPlaintextSignatureProvider.h */,
+				DC0EFB2D121D57B000DB1ACF /* OAPlaintextSignatureProvider.m */,
+				DC0EFB30121D57B000DB1ACF /* OARequestParameter.h */,
+				DC0EFB31121D57B000DB1ACF /* OARequestParameter.m */,
+				DC0EFB34121D57B000DB1ACF /* OAServiceTicket.h */,
+				DC0EFB35121D57B000DB1ACF /* OAServiceTicket.m */,
+				DC0EFB36121D57B000DB1ACF /* OASignatureProviding.h */,
+				DC0EFB3A121D57B000DB1ACF /* OAToken.h */,
+				DC0EFB3B121D57B000DB1ACF /* OAToken.m */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
+		DC0EFB6E121D581F00DB1ACF /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EFB6F121D581F00DB1ACF /* Base64Transcoder.c */,
+				DC0EFB70121D581F00DB1ACF /* Base64Transcoder.h */,
+				DC0EFB71121D581F00DB1ACF /* hmac.c */,
+				DC0EFB72121D581F00DB1ACF /* hmac.h */,
+				DC0EFB73121D581F00DB1ACF /* sha1.c */,
+				DC0EFB74121D581F00DB1ACF /* sha1.h */,
+			);
+			name = Crypto;
+			path = OAuth/src/Crypto;
+			sourceTree = "<group>";
+		};
+		DC1B61D6121D66B900AC5C04 /* Test Application */ = {
+			isa = PBXGroup;
+			children = (
+				DC1B61E3121D66EB00AC5C04 /* MainMenu.xib */,
+				DC1B61EA121D672600AC5C04 /* FLApplicationController.h */,
+				DC1B61EB121D672600AC5C04 /* FLApplicationController.m */,
+				DC1B6204121D67A100AC5C04 /* main.m */,
+			);
+			name = "Test Application";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -112,6 +295,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0EFB3E121D57B000DB1ACF /* NSMutableURLRequest+Parameters.h in Headers */,
+				DC0EFB42121D57B000DB1ACF /* NSString+URLEncoding.h in Headers */,
+				DC0EFB46121D57B000DB1ACF /* NSURL+Base.h in Headers */,
+				DC0EFB4A121D57B000DB1ACF /* OAConsumer.h in Headers */,
+				DC0EFB4E121D57B000DB1ACF /* OADataFetcher.h in Headers */,
+				DC0EFB52121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.h in Headers */,
+				DC0EFB56121D57B000DB1ACF /* OAMutableURLRequest.h in Headers */,
+				DC0EFB5A121D57B000DB1ACF /* OAPlaintextSignatureProvider.h in Headers */,
+				DC0EFB5E121D57B000DB1ACF /* OARequestParameter.h in Headers */,
+				DC0EFB62121D57B000DB1ACF /* OAServiceTicket.h in Headers */,
+				DC0EFB64121D57B000DB1ACF /* OASignatureProviding.h in Headers */,
+				DC0EFB68121D57B000DB1ACF /* OAToken.h in Headers */,
+				DC0EFB76121D581F00DB1ACF /* Base64Transcoder.h in Headers */,
+				DC0EFB78121D581F00DB1ACF /* hmac.h in Headers */,
+				DC0EFB7A121D581F00DB1ACF /* sha1.h in Headers */,
+				DC0EFB85121D597C00DB1ACF /* FLToken.h in Headers */,
+				DC0EFBCA121D5E7700DB1ACF /* FLResponse.h in Headers */,
+				DC1B61B3121D645D00AC5C04 /* FLDataFetcher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +338,25 @@
 			productReference = 8DC2EF5B0486A6940098B216 /* Flattr.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		DC1B61DA121D66D700AC5C04 /* FlattrTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1B61E0121D66D800AC5C04 /* Build configuration list for PBXNativeTarget "FlattrTestApp" */;
+			buildPhases = (
+				DC1B61D7121D66D700AC5C04 /* Resources */,
+				DC1B61EE121D672600AC5C04 /* Copy Frameworks */,
+				DC1B61D8121D66D700AC5C04 /* Sources */,
+				DC1B61D9121D66D700AC5C04 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC1B61E2121D66DB00AC5C04 /* PBXTargetDependency */,
+			);
+			name = FlattrTestApp;
+			productName = FlattrTestApp;
+			productReference = DC1B61DB121D66D700AC5C04 /* FlattrTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,6 +371,7 @@
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* Flattr */,
+				DC1B61DA121D66D700AC5C04 /* FlattrTestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +385,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC1B61D7121D66D700AC5C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1B61E9121D671100AC5C04 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -171,10 +400,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0EFB3F121D57B000DB1ACF /* NSMutableURLRequest+Parameters.m in Sources */,
+				DC0EFB43121D57B000DB1ACF /* NSString+URLEncoding.m in Sources */,
+				DC0EFB47121D57B000DB1ACF /* NSURL+Base.m in Sources */,
+				DC0EFB4B121D57B000DB1ACF /* OAConsumer.m in Sources */,
+				DC0EFB4F121D57B000DB1ACF /* OADataFetcher.m in Sources */,
+				DC0EFB53121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				DC0EFB57121D57B000DB1ACF /* OAMutableURLRequest.m in Sources */,
+				DC0EFB5B121D57B000DB1ACF /* OAPlaintextSignatureProvider.m in Sources */,
+				DC0EFB5F121D57B000DB1ACF /* OARequestParameter.m in Sources */,
+				DC0EFB63121D57B000DB1ACF /* OAServiceTicket.m in Sources */,
+				DC0EFB69121D57B000DB1ACF /* OAToken.m in Sources */,
+				DC0EFB75121D581F00DB1ACF /* Base64Transcoder.c in Sources */,
+				DC0EFB77121D581F00DB1ACF /* hmac.c in Sources */,
+				DC0EFB79121D581F00DB1ACF /* sha1.c in Sources */,
+				DC0EFB86121D597C00DB1ACF /* FLToken.m in Sources */,
+				DC0EFBCB121D5E7700DB1ACF /* FLResponse.m in Sources */,
+				DC1B61B4121D645D00AC5C04 /* FLDataFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1B61D8121D66D700AC5C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1B620A121D67E000AC5C04 /* main.m in Sources */,
+				DC1B61F2121D675800AC5C04 /* FLApplicationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC1B61E2121D66DB00AC5C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* Flattr */;
+			targetProxy = DC1B61E1121D66DB00AC5C04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
@@ -203,7 +466,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Flattr_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = Flattr;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -221,7 +484,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Flattr_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = Flattr;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -253,6 +516,54 @@
 			};
 			name = Release;
 		};
+		DC1B61DE121D66D800AC5C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "FlattrTestApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FlattrTestApp;
+			};
+			name = Debug;
+		};
+		DC1B61DF121D66D800AC5C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "FlattrTestApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FlattrTestApp;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -270,6 +581,15 @@
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
 				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC1B61E0121D66D800AC5C04 /* Build configuration list for PBXNativeTarget "FlattrTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1B61DE121D66D800AC5C04 /* Debug */,
+				DC1B61DF121D66D800AC5C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
