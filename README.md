@@ -1,3 +1,5 @@
-# Flattr REST API Library
+# Implementations
 
 * Objective-C
+
+Feel free to add your own implementations in different langauges.
