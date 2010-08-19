@@ -37,41 +37,12 @@
 		DC0EFBCB121D5E7700DB1ACF /* FLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFBC9121D5E7700DB1ACF /* FLResponse.m */; };
 		DC1B61B3121D645D00AC5C04 /* FLDataFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1B61B1121D645D00AC5C04 /* FLDataFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC1B61B4121D645D00AC5C04 /* FLDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B61B2121D645D00AC5C04 /* FLDataFetcher.m */; };
-		DC1B61E7121D670A00AC5C04 /* Flattr.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Flattr.framework */; };
-		DC1B61E9121D671100AC5C04 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1B61E3121D66EB00AC5C04 /* MainMenu.xib */; };
-		DC1B61F2121D675800AC5C04 /* FLApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B61EB121D672600AC5C04 /* FLApplicationController.m */; };
-		DC1B620A121D67E000AC5C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B6204121D67A100AC5C04 /* main.m */; };
-		DC1B6244121D6AC500AC5C04 /* Flattr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Flattr.framework */; };
 		DC39CBC4121D855100717532 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = DC39CBC2121D855100717532 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC39CBC5121D855100717532 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = DC39CBC3121D855100717532 /* NSData+Base64.m */; };
 		DC39CBCE121D856C00717532 /* NSString+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = DC39CBBC121D844900717532 /* NSString+Crypto.m */; };
 		DC6BE6DD121DC058006D9BC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC6BE6DB121DC058006D9BC6 /* InfoPlist.strings */; };
 		DC85E005121D9B42001B25FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC85E004121D9B42001B25FA /* Cocoa.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DC1B61E1121D66DB00AC5C04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = Flattr;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		DC1B61EE121D672600AC5C04 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DC1B61E7121D670A00AC5C04 /* Flattr.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -109,17 +80,11 @@
 		DC0EFBC9121D5E7700DB1ACF /* FLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLResponse.m; path = ../../src/FLResponse.m; sourceTree = SOURCE_ROOT; };
 		DC1B61B1121D645D00AC5C04 /* FLDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLDataFetcher.h; path = ../../src/FLDataFetcher.h; sourceTree = SOURCE_ROOT; };
 		DC1B61B2121D645D00AC5C04 /* FLDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLDataFetcher.m; path = ../../src/FLDataFetcher.m; sourceTree = SOURCE_ROOT; };
-		DC1B61DB121D66D700AC5C04 /* FlattrTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlattrTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC1B61E3121D66EB00AC5C04 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = ../../res/MainMenu.xib; sourceTree = SOURCE_ROOT; };
-		DC1B61EA121D672600AC5C04 /* FLApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLApplicationController.h; path = ../../src/FLApplicationController.h; sourceTree = SOURCE_ROOT; };
-		DC1B61EB121D672600AC5C04 /* FLApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLApplicationController.m; path = ../../src/FLApplicationController.m; sourceTree = SOURCE_ROOT; };
-		DC1B6204121D67A100AC5C04 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../src/main.m; sourceTree = SOURCE_ROOT; };
 		DC39CBBB121D844900717532 /* NSString+Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Crypto.h"; path = "../../OAuth/src/NSString+Crypto.h"; sourceTree = SOURCE_ROOT; };
 		DC39CBBC121D844900717532 /* NSString+Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Crypto.m"; path = "../../OAuth/src/NSString+Crypto.m"; sourceTree = SOURCE_ROOT; };
 		DC39CBC2121D855100717532 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "../../OAuth/src/NSData+Base64.h"; sourceTree = SOURCE_ROOT; };
 		DC39CBC3121D855100717532 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "../../OAuth/src/NSData+Base64.m"; sourceTree = SOURCE_ROOT; };
 		DC6BE6B5121DBFAB006D9BC6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../res/Info.plist; sourceTree = SOURCE_ROOT; };
-		DC6BE6C9121DBFFF006D9BC6 /* FlattrTestApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FlattrTestApp-Info.plist"; path = "../../res/FlattrTestApp-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DC6BE6DC121DC058006D9BC6 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = ../../res/English.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		DC85E004121D9B42001B25FA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -134,14 +99,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC1B61D9121D66D700AC5C04 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC1B6244121D6AC500AC5C04 /* Flattr.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -149,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				8DC2EF5B0486A6940098B216 /* Flattr.framework */,
-				DC1B61DB121D66D700AC5C04 /* FlattrTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,12 +115,10 @@
 			children = (
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				DC0EFB0F121D574D00DB1ACF /* OAuth */,
-				DC1B61D6121D66B900AC5C04 /* Test Application */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				DC6BE6C9121DBFFF006D9BC6 /* FlattrTestApp-Info.plist */,
 			);
 			name = Flattr;
 			sourceTree = "<group>";
@@ -258,18 +212,6 @@
 			name = OAuth;
 			sourceTree = "<group>";
 		};
-		DC1B61D6121D66B900AC5C04 /* Test Application */ = {
-			isa = PBXGroup;
-			children = (
-				DC1B61E3121D66EB00AC5C04 /* MainMenu.xib */,
-				DC1B61EA121D672600AC5C04 /* FLApplicationController.h */,
-				DC1B61EB121D672600AC5C04 /* FLApplicationController.m */,
-				DC1B6204121D67A100AC5C04 /* main.m */,
-			);
-			name = "Test Application";
-			path = ../../OAuth/src;
-			sourceTree = SOURCE_ROOT;
-		};
 		DC39CBBA121D843000717532 /* Extension Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,25 +271,6 @@
 			productReference = 8DC2EF5B0486A6940098B216 /* Flattr.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DC1B61DA121D66D700AC5C04 /* FlattrTestApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC1B61E0121D66D800AC5C04 /* Build configuration list for PBXNativeTarget "FlattrTestApp" */;
-			buildPhases = (
-				DC1B61D7121D66D700AC5C04 /* Resources */,
-				DC1B61EE121D672600AC5C04 /* Copy Frameworks */,
-				DC1B61D8121D66D700AC5C04 /* Sources */,
-				DC1B61D9121D66D700AC5C04 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DC1B61E2121D66DB00AC5C04 /* PBXTargetDependency */,
-			);
-			name = FlattrTestApp;
-			productName = FlattrTestApp;
-			productReference = DC1B61DB121D66D700AC5C04 /* FlattrTestApp.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -362,7 +285,6 @@
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* Flattr */,
-				DC1B61DA121D66D700AC5C04 /* FlattrTestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -373,14 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6BE6DD121DC058006D9BC6 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC1B61D7121D66D700AC5C04 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC1B61E9121D671100AC5C04 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,24 +324,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC1B61D8121D66D700AC5C04 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC1B620A121D67E000AC5C04 /* main.m in Sources */,
-				DC1B61F2121D675800AC5C04 /* FLApplicationController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DC1B61E2121D66DB00AC5C04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8DC2EF4F0486A6940098B216 /* Flattr */;
-			targetProxy = DC1B61E1121D66DB00AC5C04 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC6BE6DB121DC058006D9BC6 /* InfoPlist.strings */ = {
@@ -506,54 +403,6 @@
 			};
 			name = Release;
 		};
-		DC1B61DE121D66D800AC5C04 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "../../res/FlattrTestApp-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = FlattrTestApp;
-			};
-			name = Debug;
-		};
-		DC1B61DF121D66D800AC5C04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "../../res/FlattrTestApp-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = FlattrTestApp;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,15 +420,6 @@
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
 				1DEB91B308733DA50010E9CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC1B61E0121D66D800AC5C04 /* Build configuration list for PBXNativeTarget "FlattrTestApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC1B61DE121D66D800AC5C04 /* Debug */,
-				DC1B61DF121D66D800AC5C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
