@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Flattr' target in the 'Flattr' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

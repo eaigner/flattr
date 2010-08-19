@@ -1,0 +1,3 @@
+[submodule "OAuth"]
+	path = OAuth
+	url = http://github.com/sml/oauth-objc.git
