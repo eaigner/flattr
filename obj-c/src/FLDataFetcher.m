@@ -17,54 +17,45 @@
 
 @implementation FLDataFetcher
 
-- (id)initWithEndpoint:(NSURL *)endpoint consumer:(OAConsumer *)consumer
-				 token:(OAToken *)token method:(NSString *)httpMethod {
+- (id)initWithEndpoint:(NSURL *)endpoint consumer:(OAConsumer *)consumer token:(OAToken *)token method:(NSString *)meth {
+	OAMutableURLRequest *req = [[OAMutableURLRequest alloc] initWithURL:endpoint
+																														 consumer:consumer
+																																token:token
+																																realm:nil
+																										signatureProvider:nil];
+	[req setHTTPMethod:meth];
+	
+	return [self initWithRequest:[req autorelease]];
+}
+
+- (id)initWithRequest:(OAMutableURLRequest *)req {
 	if (self = [super init]) {
-		endpoint_ = [endpoint retain];
-		consumer_ = [consumer retain];
-		token_ = [token retain];
-		method_ = [httpMethod copy];
+		request_ = [req retain];
 	}
 	
 	return self;
 }
 
 - (void)dealloc {
-	[endpoint_ release];
-	[consumer_ release];
-	[token_ release];
-	[method_ release];
-	
+	[request_ release];
 	[super dealloc];
 }
 
 - (FLResponse *)fetchSynchronous {
-	NSData *responseData;
-	OAMutableURLRequest *request;
-	
-	request = [[OAMutableURLRequest alloc] initWithURL:endpoint_
-											  consumer:consumer_
-												 token:token_
-												 realm:nil
-									 signatureProvider:nil];
-	
-    [request setHTTPMethod:method_];
-	[request prepare];
+	// Prepare request
+	[request_ prepare];
 	
 	// Send request
 	NSError *err = noErr;
 	NSHTTPURLResponse *response = nil;
-	responseData = [NSURLConnection sendSynchronousRequest:request
-										 returningResponse:&response
-													 error:&err];
+	NSData *responseData = [NSURLConnection sendSynchronousRequest:request_
+																							 returningResponse:&response
+																													 error:&err];
 	
 	// Init response object
 	FLResponse *responseObject = [[FLResponse alloc] initWithHTTPURLResponse:response
-																	consumer:consumer_
-																		data:responseData
-																	   error:err];
-	
-	[request release];
+																																			data:responseData
+																																		 error:err];
 	
 	return [responseObject autorelease];  
 }

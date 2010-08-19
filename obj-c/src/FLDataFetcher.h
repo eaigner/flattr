@@ -11,17 +11,15 @@
 
 @class OAToken;
 @class OAConsumer;
+@class OAMutableURLRequest;
 @class FLResponse;
 
 @interface FLDataFetcher : NSObject {
-	NSURL *endpoint_;
-	OAConsumer *consumer_;
-	OAToken *token_;
-	NSString *method_;
+	OAMutableURLRequest *request_;
 }
 
-- (id)initWithEndpoint:(NSURL *)endpoint consumer:(OAConsumer *)consumer
-				 token:(OAToken *)token method:(NSString *)httpMethod;
+- (id)initWithEndpoint:(NSURL *)endpoint consumer:(OAConsumer *)consumer token:(OAToken *)token method:(NSString *)meth;
+- (id)initWithRequest:(OAMutableURLRequest *)req;
 
 /*
  * We are fetching synchronous, because it's much more convenient in 10.6

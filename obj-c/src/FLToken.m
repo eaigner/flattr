@@ -15,17 +15,22 @@
 #import "FLDataFetcher.h"
 
 
-@implementation FLToken
+@interface FLToken ()
+@property (nonatomic, retain, readwrite) OAConsumer *consumer;
+@end
 
-+ (FLToken *)requestTokenForConsumer:(OAConsumer *)consumer error:(NSError **)err {
-	if (consumer == nil) {
+@implementation FLToken
+@synthesize consumer;
+
++ (FLToken *)requestTokenForConsumer:(OAConsumer *)aConsumer error:(NSError **)err {
+	if (aConsumer == nil) {
 		return nil;
 	}
 	
 	// Init data fetcher for token endpoint
 	NSURL *endpoint = [NSURL URLWithString:@"http://api.flattr.com/oauth/request_token"];
 	FLDataFetcher *fetcher = [[FLDataFetcher alloc] initWithEndpoint:endpoint
-																													consumer:consumer
+																													consumer:aConsumer
 																														 token:nil
 																														method:@"POST"];
 	
@@ -36,7 +41,7 @@
 																									 encoding:NSUTF8StringEncoding];
 		
 		FLToken *token = [[FLToken alloc] initWithHTTPResponseBody:responseBody];
-		
+		token.consumer = aConsumer;
 		return [token autorelease];
 	}
 	else {
@@ -71,6 +76,14 @@
 	
 	// Open the auth page
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:endpoint]];
+}
+
+- (BOOL)authorizeWithPin:(NSString *)pin {
+	if ([pin length] <= 0) {
+		return NO;
+	}
+	
+	return YES;
 }
 
 @end

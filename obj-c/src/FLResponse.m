@@ -8,31 +8,25 @@
 
 #import "FLResponse.h"
 
-#import "OAConsumer.h"
-
 
 NSString * const FLAPIErrorDomainName = @"FLAPIErrorDomain";
 
 @interface FLResponse ()
 @property (nonatomic, retain, readwrite) NSHTTPURLResponse *response;
-@property (nonatomic, retain, readwrite) OAConsumer *consumer;
 @property (nonatomic, retain, readwrite) NSData *responseData;
 @property (nonatomic, retain, readwrite) NSError *error;
 @end
 
 @implementation FLResponse
 @synthesize response;
-@synthesize consumer;
 @synthesize responseData;
 @synthesize error;
 
 - (id)initWithHTTPURLResponse:(NSHTTPURLResponse *)aResponse
-					 consumer:(OAConsumer *)aConsumer
-						 data:(NSData *)bodyData
-						error:(NSError *)err {
+												 data:(NSData *)bodyData
+												error:(NSError *)err {
 	if (self = [super init]) {
 		self.response = aResponse;
-		self.consumer = aConsumer;
 		self.responseData = bodyData;
 		self.error = err;
 		
@@ -41,11 +35,11 @@ NSString * const FLAPIErrorDomainName = @"FLAPIErrorDomain";
 			if (error == nil) {
 				NSDictionary *userInfo;
 				userInfo = [NSDictionary dictionaryWithObject:@"Empty response"
-													   forKey:NSLocalizedDescriptionKey];
+																							 forKey:NSLocalizedDescriptionKey];
 				
 				self.error = [NSError errorWithDomain:FLAPIErrorDomainName
-												 code:-1
-											 userInfo:userInfo];
+																				 code:-1
+																		 userInfo:userInfo];
 			}
 		}
 	}
@@ -56,7 +50,6 @@ NSString * const FLAPIErrorDomainName = @"FLAPIErrorDomain";
 - (void)dealloc {
 	self.response = nil;
 	self.responseData = nil;
-	self.consumer = nil;
 	self.error = nil;
 	
 	[super dealloc];
