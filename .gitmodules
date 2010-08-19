@@ -1,3 +1,4 @@
-[submodule "OAuth"]
-	path = OAuth
+
+[submodule "obj-c/OAuth"]
+	path = obj-c/OAuth
 	url = git@github.com:eaigner/oauth-objc.git
