@@ -83,7 +83,45 @@
 		return NO;
 	}
 	
-	return YES;
+	// Create the request manually
+	NSURL *endpoint = [NSURL URLWithString:@"https://api.flattr.com/oauth/access_token"];
+	OAMutableURLRequest *request = [[OAMutableURLRequest alloc] initWithURL:endpoint
+																																 consumer:self.consumer
+																																		token:self
+																																		realm:nil
+																												signatureProvider:nil];
+	[request setHTTPMethod:@"POST"];
+	
+	// Add the verifier field
+	[request setParameters:[NSArray arrayWithObject:
+													[OARequestParameter requestParameterWithName:@"oauth_verifier"
+																																 value:pin]]];
+	
+	// Initialize new data fetcher
+	FLDataFetcher *fetcher = [[FLDataFetcher alloc] initWithRequest:request];
+	FLResponse *response = [fetcher fetchSynchronous];
+	
+	BOOL isValid = [response isValid];
+	if (isValid) {
+		NSString *responseBody = [[NSString alloc] initWithData:response.responseData
+																									 encoding:NSUTF8StringEncoding];
+		
+		// Copy new key and secret to self
+		FLToken *token = [[FLToken alloc] initWithHTTPResponseBody:responseBody];
+		self.key = token.key;
+		self.secret = token.secret;
+		
+		[token release];
+	}
+
+	[request release];
+	[fetcher release];
+	
+	return isValid;
+}
+
+- (NSString *)description {
+	return [NSString stringWithFormat:@"Token {%@, %@}", self.key, self.secret];
 }
 
 @end
