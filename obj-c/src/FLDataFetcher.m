@@ -12,8 +12,6 @@
 #import "OAConsumer.h"
 #import "OAMutableURLRequest.h"
 
-#import "FLResponse.h"
-
 
 @implementation FLDataFetcher
 

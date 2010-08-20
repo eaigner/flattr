@@ -8,6 +8,8 @@
 
 #import "FLResponse.h"
 
+#import "NSError+Ext.h"
+
 
 NSString * const FLAPIErrorDomainName = @"FLAPIErrorDomain";
 
@@ -21,6 +23,7 @@ NSString * const FLAPIErrorDomainName = @"FLAPIErrorDomain";
 @synthesize response;
 @synthesize responseData;
 @synthesize error;
+@dynamic UTF8Body;
 
 - (id)initWithHTTPURLResponse:(NSHTTPURLResponse *)aResponse
 												 data:(NSData *)bodyData
@@ -30,17 +33,11 @@ NSString * const FLAPIErrorDomainName = @"FLAPIErrorDomain";
 		self.responseData = bodyData;
 		self.error = err;
 		
-		// Check for errors
-		if (aResponse == nil || bodyData == nil || err != nil) {
-			if (error == nil) {
-				NSDictionary *userInfo;
-				userInfo = [NSDictionary dictionaryWithObject:@"Empty response"
-																							 forKey:NSLocalizedDescriptionKey];
-				
-				self.error = [NSError errorWithDomain:FLAPIErrorDomainName
-																				 code:-1
-																		 userInfo:userInfo];
-			}
+		// Check for empty response
+		if (aResponse == nil && err == nil) {			
+			self.error = [NSError errorWithDomain:FLAPIErrorDomainName
+																			 code:-1
+											 localizedDescription:@"Empty response"];
 		}
 	}
 	
@@ -53,6 +50,17 @@ NSString * const FLAPIErrorDomainName = @"FLAPIErrorDomain";
 	self.error = nil;
 	
 	[super dealloc];
+}
+
+- (NSString *)UTF8Body {
+	if (responseData) {
+		NSString *body = [[NSString alloc] initWithData:responseData
+																					 encoding:NSUTF8StringEncoding];
+		
+		return [body autorelease];
+	}
+	
+	return nil;
 }
 
 - (BOOL)isValid {

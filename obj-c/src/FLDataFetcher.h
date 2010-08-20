@@ -8,11 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "FLResponse.h"
+
 
 @class OAToken;
 @class OAConsumer;
 @class OAMutableURLRequest;
-@class FLResponse;
 
 @interface FLDataFetcher : NSObject {
 	OAMutableURLRequest *request_;

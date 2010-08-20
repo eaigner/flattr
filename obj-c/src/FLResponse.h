@@ -20,6 +20,7 @@ extern NSString * const FLAPIErrorDomainName;
 
 @property (nonatomic, retain, readonly) NSHTTPURLResponse *response;
 @property (nonatomic, retain, readonly) NSData *responseData;
+@property (nonatomic, retain, readonly) NSString *UTF8Body;
 @property (nonatomic, retain, readonly) NSError *error;
 
 - (id)initWithHTTPURLResponse:(NSHTTPURLResponse *)aResponse

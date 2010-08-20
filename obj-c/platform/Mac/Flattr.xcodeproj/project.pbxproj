@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC0EFB3E121D57B000DB1ACF /* NSMutableURLRequest+Parameters.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB10121D57B000DB1ACF /* NSMutableURLRequest+Parameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB3E121D57B000DB1ACF /* NSMutableURLRequest+Parameters.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB10121D57B000DB1ACF /* NSMutableURLRequest+Parameters.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB3F121D57B000DB1ACF /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB11121D57B000DB1ACF /* NSMutableURLRequest+Parameters.m */; };
-		DC0EFB42121D57B000DB1ACF /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB14121D57B000DB1ACF /* NSString+URLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB42121D57B000DB1ACF /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB14121D57B000DB1ACF /* NSString+URLEncoding.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB43121D57B000DB1ACF /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB15121D57B000DB1ACF /* NSString+URLEncoding.m */; };
-		DC0EFB46121D57B000DB1ACF /* NSURL+Base.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB18121D57B000DB1ACF /* NSURL+Base.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB46121D57B000DB1ACF /* NSURL+Base.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB18121D57B000DB1ACF /* NSURL+Base.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB47121D57B000DB1ACF /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB19121D57B000DB1ACF /* NSURL+Base.m */; };
 		DC0EFB4A121D57B000DB1ACF /* OAConsumer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB1C121D57B000DB1ACF /* OAConsumer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC0EFB4B121D57B000DB1ACF /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB1D121D57B000DB1ACF /* OAConsumer.m */; };
-		DC0EFB4E121D57B000DB1ACF /* OADataFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB20121D57B000DB1ACF /* OADataFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB4E121D57B000DB1ACF /* OADataFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB20121D57B000DB1ACF /* OADataFetcher.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB4F121D57B000DB1ACF /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB21121D57B000DB1ACF /* OADataFetcher.m */; };
-		DC0EFB52121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB24121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB52121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB24121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB53121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB25121D57B000DB1ACF /* OAHMAC_SHA1SignatureProvider.m */; };
-		DC0EFB56121D57B000DB1ACF /* OAMutableURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB28121D57B000DB1ACF /* OAMutableURLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB56121D57B000DB1ACF /* OAMutableURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB28121D57B000DB1ACF /* OAMutableURLRequest.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB57121D57B000DB1ACF /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB29121D57B000DB1ACF /* OAMutableURLRequest.m */; };
-		DC0EFB5A121D57B000DB1ACF /* OAPlaintextSignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB2C121D57B000DB1ACF /* OAPlaintextSignatureProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB5A121D57B000DB1ACF /* OAPlaintextSignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB2C121D57B000DB1ACF /* OAPlaintextSignatureProvider.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB5B121D57B000DB1ACF /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB2D121D57B000DB1ACF /* OAPlaintextSignatureProvider.m */; };
-		DC0EFB5E121D57B000DB1ACF /* OARequestParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB30121D57B000DB1ACF /* OARequestParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB5E121D57B000DB1ACF /* OARequestParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB30121D57B000DB1ACF /* OARequestParameter.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB5F121D57B000DB1ACF /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB31121D57B000DB1ACF /* OARequestParameter.m */; };
-		DC0EFB62121D57B000DB1ACF /* OAServiceTicket.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB34121D57B000DB1ACF /* OAServiceTicket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB62121D57B000DB1ACF /* OAServiceTicket.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB34121D57B000DB1ACF /* OAServiceTicket.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB63121D57B000DB1ACF /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB35121D57B000DB1ACF /* OAServiceTicket.m */; };
-		DC0EFB64121D57B000DB1ACF /* OASignatureProviding.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB36121D57B000DB1ACF /* OASignatureProviding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0EFB64121D57B000DB1ACF /* OASignatureProviding.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB36121D57B000DB1ACF /* OASignatureProviding.h */; settings = {ATTRIBUTES = (); }; };
 		DC0EFB68121D57B000DB1ACF /* OAToken.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0EFB3A121D57B000DB1ACF /* OAToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC0EFB69121D57B000DB1ACF /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFB3B121D57B000DB1ACF /* OAToken.m */; };
 		DC0EFB7E121D583A00DB1ACF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0EFB7D121D583A00DB1ACF /* Security.framework */; };
@@ -37,7 +37,11 @@
 		DC0EFBCB121D5E7700DB1ACF /* FLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EFBC9121D5E7700DB1ACF /* FLResponse.m */; };
 		DC1B61B3121D645D00AC5C04 /* FLDataFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1B61B1121D645D00AC5C04 /* FLDataFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC1B61B4121D645D00AC5C04 /* FLDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B61B2121D645D00AC5C04 /* FLDataFetcher.m */; };
-		DC39CBC4121D855100717532 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = DC39CBC2121D855100717532 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC399526121EBF0E00137664 /* NSURL+Format.h in Headers */ = {isa = PBXBuildFile; fileRef = DC399524121EBF0E00137664 /* NSURL+Format.h */; };
+		DC399527121EBF0E00137664 /* NSURL+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = DC399525121EBF0E00137664 /* NSURL+Format.m */; };
+		DC39952C121EC0C400137664 /* FLThingListByUser.h in Headers */ = {isa = PBXBuildFile; fileRef = DC39952A121EC0C400137664 /* FLThingListByUser.h */; };
+		DC39952D121EC0C400137664 /* FLThingListByUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DC39952B121EC0C400137664 /* FLThingListByUser.m */; };
+		DC39CBC4121D855100717532 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = DC39CBC2121D855100717532 /* NSData+Base64.h */; settings = {ATTRIBUTES = (); }; };
 		DC39CBC5121D855100717532 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = DC39CBC3121D855100717532 /* NSData+Base64.m */; };
 		DC39CBCE121D856C00717532 /* NSString+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = DC39CBBC121D844900717532 /* NSString+Crypto.m */; };
 		DC451F32121DDD8800FAB501 /* FLCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = DC451F30121DDD8800FAB501 /* FLCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +49,12 @@
 		DC451F36121DDDD300FAB501 /* Flattr.h in Headers */ = {isa = PBXBuildFile; fileRef = DC451F34121DDDD300FAB501 /* Flattr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC6BE6DD121DC058006D9BC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC6BE6DB121DC058006D9BC6 /* InfoPlist.strings */; };
 		DC85E005121D9B42001B25FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC85E004121D9B42001B25FA /* Cocoa.framework */; };
+		DCCE384B121E732D0062145F /* FLMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = DCCE3849121E732D0062145F /* FLMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCCE384C121E732D0062145F /* FLMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE384A121E732D0062145F /* FLMethod.m */; };
+		DCCE3857121E78560062145F /* FLThingClick.h in Headers */ = {isa = PBXBuildFile; fileRef = DCCE3855121E78560062145F /* FLThingClick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCCE3858121E78560062145F /* FLThingClick.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE3856121E78560062145F /* FLThingClick.m */; };
+		DCCE3879121E82A30062145F /* NSError+Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = DCCE3877121E82A30062145F /* NSError+Ext.h */; settings = {ATTRIBUTES = (); }; };
+		DCCE387A121E82A30062145F /* NSError+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE3878121E82A30062145F /* NSError+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +93,10 @@
 		DC0EFBC9121D5E7700DB1ACF /* FLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLResponse.m; path = ../../src/FLResponse.m; sourceTree = SOURCE_ROOT; };
 		DC1B61B1121D645D00AC5C04 /* FLDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLDataFetcher.h; path = ../../src/FLDataFetcher.h; sourceTree = SOURCE_ROOT; };
 		DC1B61B2121D645D00AC5C04 /* FLDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLDataFetcher.m; path = ../../src/FLDataFetcher.m; sourceTree = SOURCE_ROOT; };
+		DC399524121EBF0E00137664 /* NSURL+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Format.h"; sourceTree = "<group>"; };
+		DC399525121EBF0E00137664 /* NSURL+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Format.m"; sourceTree = "<group>"; };
+		DC39952A121EC0C400137664 /* FLThingListByUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLThingListByUser.h; sourceTree = "<group>"; };
+		DC39952B121EC0C400137664 /* FLThingListByUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLThingListByUser.m; sourceTree = "<group>"; };
 		DC39CBBB121D844900717532 /* NSString+Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Crypto.h"; path = "../../OAuth/src/NSString+Crypto.h"; sourceTree = SOURCE_ROOT; };
 		DC39CBBC121D844900717532 /* NSString+Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Crypto.m"; path = "../../OAuth/src/NSString+Crypto.m"; sourceTree = SOURCE_ROOT; };
 		DC39CBC2121D855100717532 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "../../OAuth/src/NSData+Base64.h"; sourceTree = SOURCE_ROOT; };
@@ -93,6 +107,12 @@
 		DC6BE6B5121DBFAB006D9BC6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../res/Info.plist; sourceTree = SOURCE_ROOT; };
 		DC6BE6DC121DC058006D9BC6 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = ../../res/English.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		DC85E004121D9B42001B25FA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DCCE3849121E732D0062145F /* FLMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMethod.h; sourceTree = "<group>"; };
+		DCCE384A121E732D0062145F /* FLMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMethod.m; sourceTree = "<group>"; };
+		DCCE3855121E78560062145F /* FLThingClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLThingClick.h; sourceTree = "<group>"; };
+		DCCE3856121E78560062145F /* FLThingClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLThingClick.m; sourceTree = "<group>"; };
+		DCCE3877121E82A30062145F /* NSError+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Ext.h"; sourceTree = "<group>"; };
+		DCCE3878121E82A30062145F /* NSError+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Ext.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				08FB77AEFE84172EC02AAC07 /* Classes */,
+				DCCE3876121E82930062145F /* Categories */,
 				DC0EFB0F121D574D00DB1ACF /* OAuth */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
@@ -159,6 +180,7 @@
 				DC1B61B2121D645D00AC5C04 /* FLDataFetcher.m */,
 				DC451F30121DDD8800FAB501 /* FLCommon.h */,
 				DC451F31121DDD8800FAB501 /* FLCommon.m */,
+				DCCE3844121E72E90062145F /* Methods */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -232,6 +254,30 @@
 			name = "Extension Categories";
 			sourceTree = "<group>";
 		};
+		DCCE3844121E72E90062145F /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				DCCE3849121E732D0062145F /* FLMethod.h */,
+				DCCE384A121E732D0062145F /* FLMethod.m */,
+				DCCE3855121E78560062145F /* FLThingClick.h */,
+				DCCE3856121E78560062145F /* FLThingClick.m */,
+				DC39952A121EC0C400137664 /* FLThingListByUser.h */,
+				DC39952B121EC0C400137664 /* FLThingListByUser.m */,
+			);
+			name = Methods;
+			sourceTree = "<group>";
+		};
+		DCCE3876121E82930062145F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DCCE3877121E82A30062145F /* NSError+Ext.h */,
+				DCCE3878121E82A30062145F /* NSError+Ext.m */,
+				DC399524121EBF0E00137664 /* NSURL+Format.h */,
+				DC399525121EBF0E00137664 /* NSURL+Format.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -257,6 +303,11 @@
 				DC39CBC4121D855100717532 /* NSData+Base64.h in Headers */,
 				DC451F32121DDD8800FAB501 /* FLCommon.h in Headers */,
 				DC451F36121DDDD300FAB501 /* Flattr.h in Headers */,
+				DCCE384B121E732D0062145F /* FLMethod.h in Headers */,
+				DCCE3857121E78560062145F /* FLThingClick.h in Headers */,
+				DCCE3879121E82A30062145F /* NSError+Ext.h in Headers */,
+				DC399526121EBF0E00137664 /* NSURL+Format.h in Headers */,
+				DC39952C121EC0C400137664 /* FLThingListByUser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +384,11 @@
 				DC39CBC5121D855100717532 /* NSData+Base64.m in Sources */,
 				DC39CBCE121D856C00717532 /* NSString+Crypto.m in Sources */,
 				DC451F33121DDD8800FAB501 /* FLCommon.m in Sources */,
+				DCCE384C121E732D0062145F /* FLMethod.m in Sources */,
+				DCCE3858121E78560062145F /* FLThingClick.m in Sources */,
+				DCCE387A121E82A30062145F /* NSError+Ext.m in Sources */,
+				DC399527121EBF0E00137664 /* NSURL+Format.m in Sources */,
+				DC39952D121EC0C400137664 /* FLThingListByUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
