@@ -69,7 +69,6 @@
 		DC39963D121ED5A200137664 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC39963C121ED5A200137664 /* libxml2.dylib */; };
 		DC39965D121ED82A00137664 /* FLThing.h in Headers */ = {isa = PBXBuildFile; fileRef = DC39965B121ED82A00137664 /* FLThing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC39965E121ED82A00137664 /* FLThing.m in Sources */ = {isa = PBXBuildFile; fileRef = DC39965C121ED82A00137664 /* FLThing.m */; };
-		DC399661121ED84600137664 /* FLThing+Writeable.h in Headers */ = {isa = PBXBuildFile; fileRef = DC39965F121ED84600137664 /* FLThing+Writeable.h */; };
 		DC399665121EDACC00137664 /* CXMLNode+XPath.h in Headers */ = {isa = PBXBuildFile; fileRef = DC399663121EDACC00137664 /* CXMLNode+XPath.h */; };
 		DC399666121EDACC00137664 /* CXMLNode+XPath.m in Sources */ = {isa = PBXBuildFile; fileRef = DC399664121EDACC00137664 /* CXMLNode+XPath.m */; };
 		DC39CBC4121D855100717532 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = DC39CBC2121D855100717532 /* NSData+Base64.h */; settings = {ATTRIBUTES = (); }; };
@@ -86,6 +85,8 @@
 		DCCE3858121E78560062145F /* FLThingClick.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE3856121E78560062145F /* FLThingClick.m */; };
 		DCCE3879121E82A30062145F /* NSError+Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = DCCE3877121E82A30062145F /* NSError+Ext.h */; settings = {ATTRIBUTES = (); }; };
 		DCCE387A121E82A30062145F /* NSError+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE3878121E82A30062145F /* NSError+Ext.m */; };
+		DCE15F78121EF57900E757E1 /* FLThingRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = DCE15F76121EF57900E757E1 /* FLThingRegister.h */; };
+		DCE15F79121EF57900E757E1 /* FLThingRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE15F77121EF57900E757E1 /* FLThingRegister.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,7 +157,6 @@
 		DC39963C121ED5A200137664 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		DC39965B121ED82A00137664 /* FLThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLThing.h; sourceTree = "<group>"; };
 		DC39965C121ED82A00137664 /* FLThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLThing.m; sourceTree = "<group>"; };
-		DC39965F121ED84600137664 /* FLThing+Writeable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLThing+Writeable.h"; sourceTree = "<group>"; };
 		DC399663121EDACC00137664 /* CXMLNode+XPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CXMLNode+XPath.h"; sourceTree = "<group>"; };
 		DC399664121EDACC00137664 /* CXMLNode+XPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CXMLNode+XPath.m"; sourceTree = "<group>"; };
 		DC39CBBB121D844900717532 /* NSString+Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Crypto.h"; path = "../../OAuth/src/NSString+Crypto.h"; sourceTree = SOURCE_ROOT; };
@@ -175,6 +175,8 @@
 		DCCE3856121E78560062145F /* FLThingClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLThingClick.m; sourceTree = "<group>"; };
 		DCCE3877121E82A30062145F /* NSError+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Ext.h"; sourceTree = "<group>"; };
 		DCCE3878121E82A30062145F /* NSError+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Ext.m"; sourceTree = "<group>"; };
+		DCE15F76121EF57900E757E1 /* FLThingRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLThingRegister.h; sourceTree = "<group>"; };
+		DCE15F77121EF57900E757E1 /* FLThingRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLThingRegister.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,7 +249,6 @@
 				DCCE3844121E72E90062145F /* Methods */,
 				DC39965B121ED82A00137664 /* FLThing.h */,
 				DC39965C121ED82A00137664 /* FLThing.m */,
-				DC39965F121ED84600137664 /* FLThing+Writeable.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -379,6 +380,8 @@
 				DCCE3856121E78560062145F /* FLThingClick.m */,
 				DC39952A121EC0C400137664 /* FLThingListByUser.h */,
 				DC39952B121EC0C400137664 /* FLThingListByUser.m */,
+				DCE15F76121EF57900E757E1 /* FLThingRegister.h */,
+				DCE15F77121EF57900E757E1 /* FLThingRegister.m */,
 			);
 			name = Methods;
 			sourceTree = "<group>";
@@ -440,8 +443,8 @@
 				DC39957C121ECB3100137664 /* CXMLNode_CreationExtensions.h in Headers */,
 				DC399581121ECB4400137664 /* CTidy.h in Headers */,
 				DC39965D121ED82A00137664 /* FLThing.h in Headers */,
-				DC399661121ED84600137664 /* FLThing+Writeable.h in Headers */,
 				DC399665121EDACC00137664 /* CXMLNode+XPath.h in Headers */,
+				DCE15F78121EF57900E757E1 /* FLThingRegister.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +540,7 @@
 				DC399582121ECB4400137664 /* CTidy.m in Sources */,
 				DC39965E121ED82A00137664 /* FLThing.m in Sources */,
 				DC399666121EDACC00137664 /* CXMLNode+XPath.m in Sources */,
+				DCE15F79121EF57900E757E1 /* FLThingRegister.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

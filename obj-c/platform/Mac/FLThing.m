@@ -8,8 +8,6 @@
 
 #import "FLThing.h"
 
-#import "FLThing+Writeable.h"
-
 
 @implementation FLThing
 @synthesize id;
@@ -17,6 +15,7 @@
 @synthesize language;
 @synthesize URL;
 @synthesize title;
+@synthesize story;
 @synthesize clicks;
 @synthesize userID;
 @synthesize userName;
@@ -30,6 +29,7 @@
 	self.language = nil;
 	self.URL = nil;
 	self.title = nil;
+	self.story = nil;
 	self.userName = nil;
 	self.tags = nil;
 	self.categoryID = nil;

@@ -12,7 +12,6 @@
 
 #import "FLDataFetcher.h"
 #import "FLThing.h"
-#import "FLThing+Writeable.h"
 
 
 @interface FLThingListByUser ()

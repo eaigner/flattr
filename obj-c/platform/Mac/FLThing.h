@@ -16,7 +16,7 @@
 	NSString		*language; // maybe map to NSLocale?
 	NSURL				*URL;
 	NSString		*title;
-	// NSString *story;
+	NSString		*story;
 	NSUInteger	clicks;
 	NSUInteger	userID;
 	NSString		*userName;
@@ -26,17 +26,18 @@
 	NSString		*status;
 }
 
-@property (nonatomic, copy, readonly) NSString *id;
-@property (nonatomic, assign, readonly) NSUInteger created;
-@property (nonatomic, copy, readonly) NSString *language;
-@property (nonatomic, retain, readonly) NSURL *URL;
-@property (nonatomic, copy, readonly) NSString *title;
-@property (nonatomic, assign, readonly) NSUInteger clicks;
-@property (nonatomic, assign, readonly) NSUInteger userID;
-@property (nonatomic, copy, readonly) NSString *userName;
-@property (nonatomic, retain, readonly) NSArray *tags;
-@property (nonatomic, copy, readonly) NSString *categoryID;
-@property (nonatomic, copy, readonly) NSString *categoryName;
-@property (nonatomic, copy, readonly) NSString *status;
+@property (nonatomic, copy) NSString *id;
+@property (nonatomic, assign) NSUInteger created;
+@property (nonatomic, copy) NSString *language;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *story;
+@property (nonatomic, assign) NSUInteger clicks;
+@property (nonatomic, assign) NSUInteger userID;
+@property (nonatomic, copy) NSString *userName;
+@property (nonatomic, retain) NSArray *tags;
+@property (nonatomic, copy) NSString *categoryID;
+@property (nonatomic, copy) NSString *categoryName;
+@property (nonatomic, copy) NSString *status;
 
 @end
