@@ -1,6 +1,6 @@
 ## Example
 
-All methods are supposed to be called synchronously by wrapping them into a dispatch_async(..) like so.
+All methods are supposed to be called asynchronously by wrapping them into a dispatch_async(..) like so.
 
 	dispatch_async(dispatch_get_flattr_queue(), ^{
 		
