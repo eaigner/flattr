@@ -4,4 +4,4 @@
 	url = git@github.com:eaigner/oauth-objc.git
 [submodule "obj-c/TouchXML"]
 	path = obj-c/TouchXML
-	url = http://github.com/schwa/TouchXML.git
+	url = https://eaigner@github.com/eaigner/TouchXML.git
