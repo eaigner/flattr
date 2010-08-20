@@ -11,6 +11,8 @@
 #import <Flattr/FLDataFetcher.h>
 #import <Flattr/FLCommon.h>
 #import <Flattr/FLThingClick.h>
+#import <Flattr/FLThingListByUser.h>
+#import <Flattr/FLThing.h>
 
 // OAuth
 

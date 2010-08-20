@@ -8,9 +8,6 @@
 
 #import "FLThingClick.h"
 
-#import "NSError+Ext.h"
-#import "NSURL+Format.h"
-
 #import "FLDataFetcher.h"
 
 

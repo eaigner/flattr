@@ -8,8 +8,6 @@
 
 #import "FLResponse.h"
 
-#import "NSError+Ext.h"
-
 
 NSString * const FLAPIErrorDomainName = @"FLAPIErrorDomain";
 

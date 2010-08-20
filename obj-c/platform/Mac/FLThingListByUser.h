@@ -14,9 +14,11 @@
 @interface FLThingListByUser : FLMethod {
  @private
 	NSString *userID;
+	NSArray *things;
 }
 
 @property (nonatomic, copy, readonly) NSString *userID;
+@property (nonatomic, retain, readonly) NSArray *things;
 
 + (FLThingListByUser *)methodWithConsumer:(OAConsumer *)cons accessToken:(OAToken *)token userID:(NSString *)uid;
 

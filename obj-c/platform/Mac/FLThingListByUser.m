@@ -8,13 +8,23 @@
 
 #import "FLThingListByUser.h"
 
+#import "TouchXML.h"
+
+#import "FLDataFetcher.h"
+#import "FLThing.h"
+#import "FLThing+Writeable.h"
+
 
 @interface FLThingListByUser ()
 @property (nonatomic, copy, readwrite) NSString *userID;
+@property (nonatomic, retain, readwrite) NSArray *things;
+
 @end
+
 
 @implementation FLThingListByUser
 @synthesize userID;
+@synthesize things;
 
 + (FLThingListByUser *)methodWithConsumer:(OAConsumer *)cons accessToken:(OAToken *)token userID:(NSString *)uid {
 	return [[[FLThingListByUser alloc] initWithAPIVersion:kFLAPIVersionLatest
@@ -36,6 +46,8 @@
 
 - (void)dealloc {
 	self.userID = nil;
+	self.things = nil;
+	
 	[super dealloc];
 }
 
@@ -56,6 +68,7 @@
 	}
 	
 	// Reset fields
+	self.things = nil;
 	self.error = nil;
 	
 	// Get method endpoint and fetch data
@@ -85,8 +98,81 @@
 		}
 	}
 	else {
-		// TODO: Parse returned XML
-		NSLog(@"");
+		// Parse returned XML
+		NSError *xmlErr = noErr;
+		NSLog(@"BODY:\n\n%@", response.UTF8Body);
+		CXMLDocument *doc = [[CXMLDocument alloc] initWithData:response.responseData
+																									 options:0
+																										 error:&xmlErr];
+		
+		if (xmlErr != noErr || doc == nil) {
+			self.error = [NSError errorWithDomain:FLAPIErrorDomainName
+																			 code:0x100
+											 localizedDescription:@"Could not parse XML"];
+			valid = NO;
+		}
+		else {
+			/*
+			 * Sample XML
+			 *
+			 * <?xml version="1.0" encoding="utf-8"?>
+			 * <flattr>
+			 *		<version>0.0.1</version>
+			 *		<thing>
+			 *			<id>bf12b55dc73d89835fff9696b6cc3883</id>
+			 *			<created>1276784931</created>
+			 *			<language>sv_SE</language>
+			 *			<url>http://www.kontilint.se/kontakt</url>
+			 *			<title>Kontakta Kontilint</title>
+			 *			<story><![CDATA[Kontakta Kontilint]]></story>
+			 *			<clicks>0</clicks>
+			 *			<user>
+			 *				<id>244</id>
+			 *				<username>Bomelin</username>
+			 *			</user>
+			 *			<tags>
+			 *				<tag>asd</tag>
+			 *				<tag>fgh</tag>
+			 *				<tag>ert</tag>
+			 *			</tags>
+			 *			<category>
+			 *				<id>text</id>
+			 *				<name>Written text</name>
+			 *			</category>
+			 *			<status>owner</status>
+			 *		</thing>
+			 *		<thing>
+			 *			...
+			 *		</thing>
+			 * </flattr>
+			 */
+			
+			NSLog(@"XML:\n\n%@", [doc stringValue]);
+			
+			NSArray *thingNodes = [doc nodesForXPath:@"//thing" error:nil];
+			NSMutableArray *collect = [NSMutableArray arrayWithCapacity:[thingNodes count]];
+			
+			for (CXMLElement *node in thingNodes) {
+				FLThing *thing = [[FLThing alloc] init];
+				thing.id = [node stringForXPath:@"//id"];
+				thing.created = [node integerForXPath:@"//created"];
+				thing.language = [node stringForXPath:@"//language"];
+				thing.URL = [node URLForXPath:@"//url"];
+				thing.title = [node stringForXPath:@"//title"];
+				thing.clicks = [node integerForXPath:@"//clicks"];
+				thing.userID = [node integerForXPath:@"//user/id"];
+				thing.userName = [node stringForXPath:@"//user/username"];
+				thing.tags = [node stringArrayForNodesAtXPath:@"//tags/tag"];
+				thing.categoryID = [node stringForXPath:@"//category/id"];
+				thing.categoryName = [node stringForXPath:@"//category/name"];
+				thing.status = [node stringForXPath:@"//status"];
+				
+				[collect addObject:thing];
+				[thing release];
+			}
+			
+			self.things = [NSArray arrayWithArray:collect];
+		}
 	}
 
 	[fetcher release];
