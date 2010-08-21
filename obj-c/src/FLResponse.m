@@ -30,13 +30,6 @@ NSString * const FLAPIErrorDomainName = @"FLAPIErrorDomain";
 		self.response = aResponse;
 		self.responseData = bodyData;
 		self.error = err;
-		
-		// Check for empty response
-		if (aResponse == nil && err == nil) {			
-			self.error = [NSError errorWithDomain:FLAPIErrorDomainName
-																			 code:-1
-											 localizedDescription:@"Empty response"];
-		}
 	}
 	
 	return self;
