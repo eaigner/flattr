@@ -99,7 +99,6 @@
 	else {
 		// Parse returned XML
 		NSError *xmlErr = noErr;
-		NSLog(@"BODY:\n\n%@", response.UTF8Body);
 		CXMLDocument *doc = [[CXMLDocument alloc] initWithData:response.responseData
 																									 options:0
 																										 error:&xmlErr];
@@ -146,8 +145,6 @@
 			 * </flattr>
 			 */
 			
-			NSLog(@"XML:\n\n%@", [doc stringValue]);
-			
 			NSArray *thingNodes = [doc nodesForXPath:@"//thing" error:nil];
 			NSMutableArray *collect = [NSMutableArray arrayWithCapacity:[thingNodes count]];
 			
@@ -158,6 +155,7 @@
 				thing.language = [node stringForXPath:@"//language"];
 				thing.URL = [node URLForXPath:@"//url"];
 				thing.title = [node stringForXPath:@"//title"];
+				thing.story = [node stringForXPath:@"//story"];
 				thing.clicks = [node integerForXPath:@"//clicks"];
 				thing.userID = [node integerForXPath:@"//user/id"];
 				thing.userName = [node stringForXPath:@"//user/username"];

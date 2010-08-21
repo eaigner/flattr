@@ -40,28 +40,21 @@
 }
 
 - (NSString *)description {
-	NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
-												self.id, @"id",
-												[NSNumber numberWithUnsignedInt:created], @"created",
-												language, @"language",
-												[URL absoluteString], @"URL",
-												title, @"title",
-												[NSNumber numberWithUnsignedInt:clicks], @"clicks",
-												[NSNumber numberWithUnsignedInt:userID], @"userID",
-												userName, @"userName",
-												tags, @"tags",
-												categoryID, @"categoryID",
-												categoryName, @"categoryName",
-												status, @"status",
-												nil];
-	
-	NSMutableString *build = [NSMutableString stringWithString:@"{\n"];
-	for (NSString *key in dict) {
-		[build appendFormat:@"\t%@ = %@,\n", key, [dict objectForKey:key]];
-	}
-	[build appendString:@"}"];
-	
-	return [NSString stringWithString:build];
+	return [[NSDictionary dictionaryWithObjectsAndKeys:
+					 self.id, @"id",
+					 [NSNumber numberWithUnsignedInt:created], @"created",
+					 language, @"language",
+					 [URL absoluteString], @"URL",
+					 title, @"title",
+					 story, @"story",
+					 [NSNumber numberWithUnsignedInt:clicks], @"clicks",
+					 [NSNumber numberWithUnsignedInt:userID], @"userID",
+					 userName, @"userName",
+					 tags, @"tags",
+					 categoryID, @"categoryID",
+					 categoryName, @"categoryName",
+					 status, @"status",
+					 nil] description];
 }
 
 @end
