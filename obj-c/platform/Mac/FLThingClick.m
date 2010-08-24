@@ -78,10 +78,17 @@
 		 * http 403 - User or thing owner account inactive
 		 * http 404 - The thing could not be found
 		 */
-		if (response.error) {
+		if (statusCode >= 400) {
+			self.error = [NSError errorWithDomain:FLAPIErrorDomainName
+																			 code:statusCode
+											 localizedDescription:response.UTF8Body];
+		}
+		else if (response.error) {
 			self.error = response.error;
 		}
+		/*
 		else if (statusCode == 403) {
+			// TODO: 403 is also thrown if we try to flattr ourselves
 			self.error = [NSError errorWithDomain:FLAPIErrorDomainName
 																			 code:statusCode
 											 localizedDescription:@"The users or thing owners account is inactive"];
@@ -92,14 +99,11 @@
 											 localizedDescription:@"The thing could not be found"];
 		}
 		else if (statusCode >= 400) {
-			NSString *desc = [NSString stringWithFormat:
-												@"API returned unknown status code (body: %@)",
-												response.UTF8Body];
-			
 			self.error = [NSError errorWithDomain:FLAPIErrorDomainName
 																			 code:statusCode
-											 localizedDescription:desc];
+											 localizedDescription:@"API returned unknown status code"];
 		}
+		 */
 	}
 	
 	[fetcher release];

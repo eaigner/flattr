@@ -92,6 +92,11 @@
 																			 code:statusCode
 											 localizedDescription:@"User could not be found"];
 		}
+		else if (statusCode >= 400) {
+			self.error = [NSError errorWithDomain:FLAPIErrorDomainName
+																			 code:statusCode
+											 localizedDescription:response.UTF8Body];
+		}
 		else {
 			self.error = response.error;
 		}
@@ -101,8 +106,7 @@
 		NSError *xmlErr = noErr;
 		CXMLDocument *doc = [[CXMLDocument alloc] initWithData:response.responseData
 																									 options:0
-																										 error:&xmlErr];
-		
+																										 error:&xmlErr];		
 		if (xmlErr != noErr || doc == nil) {
 			self.error = [NSError errorWithDomain:FLAPIErrorDomainName
 																			 code:0x100
@@ -150,19 +154,19 @@
 			
 			for (CXMLElement *node in thingNodes) {
 				FLThing *thing = [[FLThing alloc] init];
-				thing.id = [node stringForXPath:@"//id"];
-				thing.created = [node integerForXPath:@"//created"];
-				thing.language = [node stringForXPath:@"//language"];
-				thing.URL = [node URLForXPath:@"//url"];
-				thing.title = [node stringForXPath:@"//title"];
-				thing.story = [node stringForXPath:@"//story"];
-				thing.clicks = [node integerForXPath:@"//clicks"];
-				thing.userID = [node integerForXPath:@"//user/id"];
-				thing.userName = [node stringForXPath:@"//user/username"];
-				thing.tags = [node stringArrayForNodesAtXPath:@"//tags/tag"];
-				thing.categoryID = [node stringForXPath:@"//category/id"];
-				thing.categoryName = [node stringForXPath:@"//category/name"];
-				thing.status = [node stringForXPath:@"//status"];
+				thing.id = [node stringForXPath:@"./id"];
+				thing.created = [node integerForXPath:@"./created"];
+				thing.language = [node stringForXPath:@"./language"];
+				thing.URL = [node URLForXPath:@"./url"];
+				thing.title = [node stringForXPath:@"./title"];
+				thing.story = [node stringForXPath:@"./story"];
+				thing.clicks = [node integerForXPath:@"./clicks"];
+				thing.userID = [node integerForXPath:@"./user/id"];
+				thing.userName = [node stringForXPath:@"./user/username"];
+				thing.tags = [node stringArrayForNodesAtXPath:@"./tags/tag"];
+				thing.categoryID = [node stringForXPath:@"./category/id"];
+				thing.categoryName = [node stringForXPath:@"./category/name"];
+				thing.status = [node stringForXPath:@"./status"];
 				
 				[collect addObject:thing];
 				[thing release];
